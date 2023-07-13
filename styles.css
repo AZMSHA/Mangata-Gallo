@@ -7,10 +7,11 @@
 }
 
 body {
+  position: relative;
   background-color: whitesmoke;
   display: grid;
   grid-template-columns: repeat(3, auto);
-  grid-template-rows: repeat(3, auto) ;
+  grid-template-rows: auto 100vh auto ;
   grid-template-areas:
     "head head head"
     "main main main"
