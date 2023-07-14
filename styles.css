@@ -104,8 +104,6 @@ main {
 
 #main-banner h1 {
   opacity: 0%;
-  text-decoration: underline;
-  text-decoration-thickness: 0.1rem;
   font-size: 3vw;
   word-wrap: normal;
   max-width: 45vw;
@@ -113,15 +111,19 @@ main {
   position: absolute;
   bottom: 1rem;
   translate: 1rem -1rem;
-  animation: pan 1s cubic-bezier(0, 0, 0, 0.69) 0.5s 1 normal forwards;
+  animation: pan 1s cubic-bezier(0, 0, 0, 0.69) 0.1s 1 normal forwards;
 }
 
 @keyframes pan {
-  from {
-    translate: -10% -3rem;
+  0% {
+    translate: -30% -3rem;
+    opacity: 0%;
   }
-  to {
-    translate: 1rem -3rem;
+  50% {
+    opacity: 0%;
+  }
+  100% {
+    translate: 3rem -3rem;
     opacity: 100%;
   }
 }
